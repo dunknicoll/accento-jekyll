@@ -8,5 +8,5 @@
  data-item-stackable="never"
  data-item-custom1-name="Notes"
  data-item-description="{{ page.content | remove: '<p>' | remove: '</p>' }}">
- Add to cart (£{{ page.price }})
+ Add to cart ({{ page.price | times: 100 | money: "GBP" }})
 </button>

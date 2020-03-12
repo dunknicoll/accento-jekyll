@@ -8,4 +8,4 @@ categories: food
 image: /assets/images/posh-franco.jpg
 ---
 
-This is ALLLLL about the posh franco bb
+A lovely posh treat

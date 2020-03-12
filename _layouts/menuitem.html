@@ -5,9 +5,7 @@ layout: default
 
 {% include page-intro.html %}
 
-{% include product.html %}
-
-<nav aria-label="Other items">
+<nav class="product__next" aria-label="Other items">
   <ul>
     {% if page.previous.url %}
       <li>
@@ -21,3 +19,5 @@ layout: default
     {% endif %}
   </ul>
 </nav>
+
+{% include product.html %}

@@ -19,7 +19,6 @@ body {
 // by default, make any new children of body to span the full track
 body > * {
   grid-column: full;
-  padding: 2rem 1rem;
 }
 
 // header, the first grid row
@@ -101,41 +100,6 @@ main {
   padding-bottom: 8rem;
   @media screen and (min-width: $screen-md-min) {
     align-content: start;
-  }
-}
-
-// reset breaking fallbacks (e.g. widths) if CSS Grid is supported
-// float, inline-block, table properties are already ignored by CSS Grid
-@supports (display: grid) {
-  main {
-    width: auto;
-    max-width: none;
-  }
-}
-
-// blog posts list
-html[data-current="blog"] main > section {
-  ul li {
-    padding: 2rem 0;
-    border-bottom: 0.05em solid $hairline-color;
-    p {
-      padding-bottom: 0;
-    }
-  }
-}
-
-// adjacent blog posts links
-nav[aria-label="Adjacent Posts"] {
-  padding: 4rem 0;
-  ul {
-    display: flex;
-    li {
-      flex: 0 0 50%;
-      width: auto;
-      &:nth-child(2) {
-        text-align: right;
-      }
-    }
   }
 }
 

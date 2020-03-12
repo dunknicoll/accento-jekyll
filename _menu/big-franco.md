@@ -8,4 +8,4 @@ categories: food
 image: /assets/images/big-franco.jpg
 ---
 
-This is ALLLLL about the big franco bb
+A tasty favourite!

@@ -9,3 +9,4 @@ intro_paragraph: >
   the `_layouts/blog.html` template to output the blog's posts after the page
   content.
 ---
+  

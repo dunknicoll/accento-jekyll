@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<h2>{{ page.title }}</h2>
+
+{% include page-intro.html %}
+
+{{ content }}
+
+<section>
+
+  <h3>Menu</h3>
+
+  <ul>
+    {% for item in site.menu %}
+      <li>
+        <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
+        {{ menu.excerpt | strip_newlines | truncate: 180 }} 
+      </li>
+    {% endfor %}
+  </ul>
+
+</section>

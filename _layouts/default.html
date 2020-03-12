@@ -5,20 +5,36 @@ layout: compress
 <!DOCTYPE html>
 <html data-current="{{ page.section }}" lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <main>
+  <main>
 
-      {{ content }}
+    {{ content }}
 
-    </main>
+  </main>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+</body>
+
+<div hidden id="snipcart" data-api-key="NDA3NTFmNDYtMzEzMS00ODliLWJkNGYtMDYyODc1YTcwZGMwNjM3MTQ3MTU3MTY2OTIzODQy">
+  <billing section="top">
+    <fieldset class="snipcart-form__set">
+        <div class="snipcart-form__field">
+            <snipcart-label class="snipcart__font--tiny" for="pickupTime">
+                Pickup Time
+            </snipcart-label>
+            <snipcart-input name="pickupTime" id="pickupTime"></snipcart-input>
+        </div>
+    </fieldset>
+</billing>
+</div>
+<script src="https://cdn.snipcart.com/themes/v3.0.9/default/snipcart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="{{ "/assets/main.js" | relative_url }}"></script>
 
 </html>

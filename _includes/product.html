@@ -1,0 +1,7 @@
+<div class="product">
+ <div class="product__information">
+ <img src="{{ page.image }}" alt="{{ page.name }} product image" class="product__image">
+    <p class="product__description">{{ page.content | remove: '<p>' | remove: '</p>' }}</p>
+    {% include product-definition.html %}
+ </div>
+</div>

@@ -3,8 +3,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.section == "home" %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.9/default/snipcart.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   {% if jekyll.environment == 'production' and site.analytics %}
     {% include analytics.html %}
   {% endif %}
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    .snipcart-item-custom-fields--textbox {
+      width: 100%;
+    }
+  </style>
 </head>

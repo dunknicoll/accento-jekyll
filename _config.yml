@@ -82,7 +82,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-gems:
+plugins:
   - jekyll-money
 
 collections:

@@ -24,19 +24,19 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Price", name: "price", widget: "number", valueType: "float"}
       - {label: "Image", name: "image", widget: "image"}
       - label: "Category"
-      name: "category"
-      widget: "select"
-      options:
-        - { label: "Breakfast", value: "breakfast" }
-        - { label: "Deli Board", value: "deli_board" }
-        - { label: "Big Franco Collection", value: "big_franco_collection" }
-        - { label: "Panino Special", value: "panino_special" }
-        - { label: "Panino Classic", value: "panino_classic" }
-        - { label: "Soup Of The Day", value: "soup_of_the_day" }
-        - { label: "Special Of The Week", value: "special_of_the_week" }
-        - { label: "Vegan Special", value: "vegan_special" }
-        - { label: "Drink", value: "drink" }
-        - { label: "Sweet", value: "sweet" }
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Breakfast", value: "breakfast" }
+          - { label: "Deli Board", value: "deli_board" }
+          - { label: "Big Franco Collection", value: "big_franco_collection" }
+          - { label: "Panino Special", value: "panino_special" }
+          - { label: "Panino Classic", value: "panino_classic" }
+          - { label: "Soup Of The Day", value: "soup_of_the_day" }
+          - { label: "Special Of The Week", value: "special_of_the_week" }
+          - { label: "Vegan Special", value: "vegan_special" }
+          - { label: "Drink", value: "drink" }
+          - { label: "Sweet", value: "sweet" }
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
